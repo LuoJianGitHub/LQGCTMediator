@@ -1,0 +1,16 @@
+PODS:
+  - LQGCTMediator (1.0.0)
+
+DEPENDENCIES:
+  - LQGCTMediator (from `../`)
+
+EXTERNAL SOURCES:
+  LQGCTMediator:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LQGCTMediator: 9dcdd77432cd4cd564af7aafbf9268e0586cc880
+
+PODFILE CHECKSUM: 7c60df8ed0974b75b03afeaef3aeafeea3cabc5d
+
+COCOAPODS: 1.11.2

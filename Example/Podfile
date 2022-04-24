@@ -1,0 +1,43 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '10.0'
+
+# 使用framework
+use_frameworks!
+
+# 忽略警告
+inhibit_all_warnings!
+
+# 三方库
+def thirdPods
+
+end
+
+# 基础层
+def basePods
+  
+end
+
+# 工具层
+def toolPods
+  # 中间件
+  pod 'LQGCTMediator', :path => '../'
+end
+
+targets = ['LQGCTMediator_Example']
+
+targets.each do |t|
+  target t do
+    thirdPods
+    basePods
+    toolPods
+  end
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # do your self something
+    end
+  end
+end
